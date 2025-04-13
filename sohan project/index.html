@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sohan's project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <div class="container">
+    <h1>SOHAN'S project</h1>
+    <h1>How are you feeling today?</h1>
+    <div class="mood-buttons">
+      <button onclick="setMood('happy')">😊 Happy</button>
+      <button onclick="setMood('sad')">😢 Sad</button>
+      <button onclick="setMood('chill')">😌 Chill</button>
+      <button onclick="setMood('motivated')">💪 Motivated</button>
+    </div>
+
+    <div class="output">
+      <p id="quote"></p>
+      <audio id="audio" controls autoplay></audio>
+    </div>
+  </div>
+ 
+  <script src="javascript.js"></script>
+  <button onclick="changeBackgroundColor()">Change Background</button>
+
+  <script>
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = getRandomColor();
+    }
+
+    
+  </script>
+</body>
+</html>

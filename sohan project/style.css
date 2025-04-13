@@ -1,0 +1,45 @@
+body {
+    margin: 50;
+    padding: 50;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:aqua ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: bisque;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 700px;
+    padding: 2rem;
+    background-color: blue;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .mood-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition:background 0.3s ease;
+  }
+  
+  .mood-buttons button:hover {
+    background: pink;
+    color: red;
+   }
+  
+  
+  .output {
+    margin-top: 2rem;
+  }
+  
+  #quote {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
